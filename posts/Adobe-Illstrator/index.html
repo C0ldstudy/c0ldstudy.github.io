@@ -408,6 +408,26 @@
       
 
     
+      
+
+      
+      <a href="https://www.linkedin.com/in/jiacen-xu-021536105/" aria-label="linkedin"
+        
+
+        
+          target="_blank"
+          
+        
+
+        
+
+        rel="noopener noreferrer">
+
+        <i class="fab fa-linkedin"></i>
+      </a>
+      
+
+    
 
   </div> <!-- .sidebar-bottom -->
 
@@ -1143,6 +1163,11 @@ And another tip is that we can set the artboard name at the bottom of the right 
         
         
         
+      <li><a href="/posts/PC_attack/">[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation</a></li>
+      
+        
+        
+        
       <li><a href="/posts/C&W_Attack/">C&W Attack</a></li>
       
         
@@ -1159,11 +1184,6 @@ And another tip is that we can set the artboard name at the bottom of the right 
         
         
       <li><a href="/posts/CCS2022/">CCS 20222 Summary</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/Coding_Interview/">Coding Interview</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1308,11 +1328,6 @@ And another tip is that we can set the artboard name at the bottom of the right 
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -2643,7 +2658,7 @@ A.Learn from people
       
       
       <div class="card">
-        <a href="/posts/text-and-typography/">
+        <a href="/posts/PC_attack/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -2655,13 +2670,13 @@ A.Learn from people
 
 
 <em class="small"
-    data-ts="1675827180"
+    data-ts="1681714800"
     data-df="ll"
     >
-  Feb  7, 2023
+  Apr 17, 2023
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Text and Typography</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation</h3>
             <div class="text-muted small">
               <p>
                 
@@ -2670,15 +2685,11 @@ A.Learn from people
 
 
 
-                This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
+                Title: On Adversarial Robustness of Point Cloud Semantic Segmentation
 
-Titles
+  Author: Jiacen Xu, Zhe Zhou, Boyuan Feng, Yufei Ding and Zhou Li
 
-H1 - heading
-
-H2 - heading
-
-H3 - he...
+  Conference: The 53rd Annual IEEE/IFIP International Conf...
               </p>
             </div>
           </div>
@@ -2717,54 +2728,61 @@ H3 - he...
       <!--  The comments switcher -->
 
   
-  <!-- The Disqus lazy loading. -->
-<div id="disqus_thread" class="pt-2 pb-2">
-  <p class="text-center text-muted small">Comments powered by <a href="https://disqus.com/">Disqus</a>.</p>
-</div>
-
+  <!-- https://giscus.app/ -->
 <script type="text/javascript">
-  var disqus_config = function () {
-    this.page.url = 'http://c0ldstudy.github.io/posts/Adobe-Illstrator/';
-    this.page.identifier = '/posts/Adobe-Illstrator/';
-  };
+  $(function () {
+    const origin = "https://giscus.app";
+    const iframe = "iframe.giscus-frame";
+    const lightTheme = "light";
+    const darkTheme = "dark_dimmed";
+    let initTheme = lightTheme;
 
-  /* Lazy loading */
-  var disqus_observer = new IntersectionObserver(
-    function (entries) {
-      if (entries[0].isIntersecting) {
-        (function () {
-          var d = document,
-            s = d.createElement('script');
-          s.src = 'https://c0ldstudy.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-
-        disqus_observer.disconnect();
-      }
-    },
-    { threshold: [0] }
-  );
-
-  disqus_observer.observe(document.querySelector('#disqus_thread'));
-
-  /* Auto switch theme */
-  function reloadDisqus() {
-    if (event.source === window && event.data && event.data.direction === ModeToggle.ID) {
-      /* Disqus hasn't been loaded */
-      if (typeof DISQUS === 'undefined') {
-        return;
-      }
-
-      if (document.readyState == 'complete') {
-        DISQUS.reset({ reload: true, config: disqus_config });
-      }
+    if ($("html[data-mode=dark]").length > 0
+        || ($("html[data-mode]").length == 0
+            && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      initTheme = darkTheme;
     }
-  }
 
-  if (document.querySelector('.mode-toggle')) {
-    window.addEventListener('message', reloadDisqus);
-  }
+    let giscusAttributes = {
+      "src": "https://giscus.app/client.js",
+      "data-repo": "C0ldstudy/c0ldstudy.github.io",
+      "data-repo-id": "MDEwOlJlcG9zaXRvcnkyMzgxNzM1ODU=",
+      "data-category": "Announcements",
+      "data-category-id": "DIC_kwDODjI9kc4CV58d",
+      "data-mapping": "pathname",
+      "data-reactions-enabled": "1",
+      "data-emit-metadata": "0",
+      "data-theme": initTheme,
+      "data-input-position": "bottom",
+      "data-lang": "",
+      "crossorigin": "anonymous",
+      "async": ""
+    };
+
+    let giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById("tail-wrapper").appendChild(giscusScript);
+
+    addEventListener("message", (event) => {
+      if (event.source === window && event.data &&
+            event.data.direction === ModeToggle.ID) {
+        /* global theme mode changed */
+        const mode = event.data.message;
+        const theme = (mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme);
+
+        const message = {
+          setConfig: {
+            theme: theme
+          }
+        };
+
+        const giscus = document.querySelector(iframe).contentWindow;
+        giscus.postMessage({ giscus: message }, origin);
+      }
+
+    });
+
+  });
 </script>
 
 
@@ -2920,11 +2938,6 @@ H3 - he...
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -3259,7 +3272,7 @@ H3 - he...
 
         <!-- <script  type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=PWaejm3rz2TG6HOtwcekX2kM9kPWz2aP6GYhuOVoNpA&cl=ffffff&w=a"></script> -->
         <div class="footer-right">
-          <p class="mb-0">Using the <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> theme <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>.
+          <p class="mb-0"><!-- Using the <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> theme <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>. -->
           </p>
         </div>
       </div>
