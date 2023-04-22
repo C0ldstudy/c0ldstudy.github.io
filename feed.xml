@@ -4,7 +4,7 @@
   <id>http://c0ldstudy.github.io/</id>
   <title>c0ldstudy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-04-21T12:56:16-07:00</updated>
+  <updated>2023-04-22T13:04:17-07:00</updated>
   <author>
     <name>Jiacen (Jason) Xu</name>
     <uri>http://c0ldstudy.github.io/</uri>
@@ -165,7 +165,7 @@ torch.backends.cudnn...
     <link href="http://c0ldstudy.github.io/posts/Coding_Interview/" rel="alternate" type="text/html" title="Coding Interview" />
     <published>2022-12-14T00:00:00-08:00</published>
   
-    <updated>2023-04-06T13:19:50-07:00</updated>
+    <updated>2023-04-21T14:55:16-07:00</updated>
   
     <id>http://c0ldstudy.github.io/posts/Coding_Interview/</id>
     <content src="http://c0ldstudy.github.io/posts/Coding_Interview/" />
@@ -175,7 +175,7 @@ torch.backends.cudnn...
 
   
     
-    <category term="PhD" />
+    <category term="Summary" />
     
   
 
