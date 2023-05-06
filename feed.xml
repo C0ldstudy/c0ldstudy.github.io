@@ -4,7 +4,7 @@
   <id>http://c0ldstudy.github.io/</id>
   <title>c0ldstudy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-04-22T13:04:17-07:00</updated>
+  <updated>2023-05-07T21:21:34-07:00</updated>
   <author>
     <name>Jiacen (Jason) Xu</name>
     <uri>http://c0ldstudy.github.io/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Paper Summary</title>
+    <link href="http://c0ldstudy.github.io/posts/ChatGPT_Prompt/" rel="alternate" type="text/html" title="Paper Summary" />
+    <published>2023-04-25T00:00:00-07:00</published>
+  
+    <updated>2023-04-25T00:00:00-07:00</updated>
+  
+    <id>http://c0ldstudy.github.io/posts/ChatGPT_Prompt/</id>
+    <content src="http://c0ldstudy.github.io/posts/ChatGPT_Prompt/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="NLP" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The note is for the course: DeepLearning.AI ChatGPT Prompt Engineering Course.
+
+ChatGPT Prompt Engineering for Developers
+Course link: https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction
+1 Basic concepts:
+
+  Base LLM: Predict the next word based on the training data.
+  Instruction Tuned LLM: Fine-tune on instructions and good attempts at following instructions.
+
+
+2 Prompting ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -74,7 +120,7 @@ We present a comparative study of PCSS robu...
     <link href="http://c0ldstudy.github.io/posts/Paper_Summary_2023/" rel="alternate" type="text/html" title="Paper Summary 2023" />
     <published>2023-02-01T00:00:00-08:00</published>
   
-    <updated>2023-02-01T00:00:00-08:00</updated>
+    <updated>2023-04-24T14:23:01-07:00</updated>
   
     <id>http://c0ldstudy.github.io/posts/Paper_Summary_2023/</id>
     <content src="http://c0ldstudy.github.io/posts/Paper_Summary_2023/" />
@@ -205,49 +251,6 @@ torch.backends.cudnn...
 
 2. Behavioral Preparation
 Think about ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>CCS 20222 Summary</title>
-    <link href="http://c0ldstudy.github.io/posts/CCS2022/" rel="alternate" type="text/html" title="CCS 20222 Summary" />
-    <published>2022-11-01T00:00:00-07:00</published>
-  
-    <updated>2023-04-06T13:19:50-07:00</updated>
-  
-    <id>http://c0ldstudy.github.io/posts/CCS2022/</id>
-    <content src="http://c0ldstudy.github.io/posts/CCS2022/" />
-    <author>
-      <name>Jiacen (Jason) Xu</name>
-    </author>
-
-  
-    
-    <category term="Papers" />
-    
-    <category term="Conference" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Paper List:
-
-  1D: Poisoning and Backdooring ML
-    
-      Identifying a Training-Set Attack’s Target Using Renormalized Influence Estimation
-      ❓FenceSitter: Black-box, Content-Agnostic, and Synchronization-Free Enrollment-Phase Attacks on Speaker Recognition Systems
-      Truth Serum: Poisoning Machine Learning Models to Reveal Their Secrets
-      LoneNeuron: a Highly-effective Feature-dom...
     </summary>
   
 
