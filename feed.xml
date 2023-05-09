@@ -4,7 +4,7 @@
   <id>http://c0ldstudy.github.io/</id>
   <title>c0ldstudy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-05-08T20:57:34-07:00</updated>
+  <updated>2023-05-08T21:20:50-07:00</updated>
   <author>
     <name>Jiacen (Jason) Xu</name>
     <uri>http://c0ldstudy.github.io/</uri>
@@ -24,12 +24,12 @@
     <link href="http://c0ldstudy.github.io/posts/ChatGPT_Prompt/" rel="alternate" type="text/html" title="ChatGPT Prompt Course Note" />
     <published>2023-04-25T00:00:00-07:00</published>
   
-    <updated>2023-05-08T20:57:25-07:00</updated>
+    <updated>2023-05-08T21:20:38-07:00</updated>
   
     <id>http://c0ldstudy.github.io/posts/ChatGPT_Prompt/</id>
     <content src="http://c0ldstudy.github.io/posts/ChatGPT_Prompt/" />
     <author>
-      <name>cotes</name>
+      <name>Jiacen (Jason) Xu</name>
     </author>
 
   
