@@ -39,7 +39,7 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Paper Summary" />
+<meta property="og:title" content="ChatGPT Prompt Course Note" />
 <meta name="author" content="Cotes Chung" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="The note is for the course: DeepLearning.AI ChatGPT Prompt Engineering Course." />
@@ -50,16 +50,16 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-04-25T00:00:00-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Paper Summary" />
+<meta property="twitter:title" content="ChatGPT Prompt Course Note" />
 <meta name="twitter:site" content="@JiacenXu" />
 <meta name="twitter:creator" content="@cotes2020" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung","url":"https://github.com/cotes2020/"},"dateModified":"2023-04-25T00:00:00-07:00","datePublished":"2023-04-25T00:00:00-07:00","description":"The note is for the course: DeepLearning.AI ChatGPT Prompt Engineering Course.","headline":"Paper Summary","mainEntityOfPage":{"@type":"WebPage","@id":"http://c0ldstudy.github.io/posts/ChatGPT_Prompt/"},"url":"http://c0ldstudy.github.io/posts/ChatGPT_Prompt/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung","url":"https://github.com/cotes2020/"},"dateModified":"2023-05-08T20:57:25-07:00","datePublished":"2023-04-25T00:00:00-07:00","description":"The note is for the course: DeepLearning.AI ChatGPT Prompt Engineering Course.","headline":"ChatGPT Prompt Course Note","mainEntityOfPage":{"@type":"WebPage","@id":"http://c0ldstudy.github.io/posts/ChatGPT_Prompt/"},"url":"http://c0ldstudy.github.io/posts/ChatGPT_Prompt/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Paper Summary | c0ldstudy
+  <title>ChatGPT Prompt Course Note | c0ldstudy
   </title>
 
   <!--
@@ -468,7 +468,7 @@
         
 
           
-            <span>Paper Summary</span>
+            <span>ChatGPT Prompt Course Note</span>
           
 
         
@@ -866,7 +866,7 @@
 
 <!-- return -->
 
-<h1 data-toc-skip>Paper Summary</h1>
+<h1 data-toc-skip>ChatGPT Prompt Course Note</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -891,6 +891,26 @@
     </span>
 
     <!-- lastmod date -->
+    
+    <span>
+      Updated
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class=""
+    data-ts="1683604645"
+    data-df="ll"
+    data-toggle="tooltip" data-placement="bottom">
+  May  8, 2023
+</em>
+
+    </span>
     
 
   
@@ -936,7 +956,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="4555 words">
+  title="4642 words">
   <em>25 min</em> read</span>
 
     </div>
@@ -962,40 +982,11 @@
 <ol>
   <li>Use delimiters to clearly indicate distinct parts of the inputs like triple quotes, triple backticks, triple dashes, angle brackets, XML tags.</li>
   <li>Ask  for structured output: HTML, JSON</li>
-  <li>Ask the model to check whether conditions are satisfied
-```python
-text_1 = f”””
-Making a cup of tea is easy! First, you need to get some \ 
-water boiling. While that’s happening, \ 
-grab a cup and put a tea bag in it. Once the water is \ 
-hot enough, just pour it over the tea bag. \ 
-Let it sit for a bit so the tea can steep. After a \ 
-few minutes, take out the tea bag. If you \ 
-like, you can add some sugar or milk to taste. \ 
-And that’s it! You’ve got yourself a delicious \ 
-cup of tea to enjoy.
-“””
-prompt = f”””
-You will be provided with text delimited by triple quotes. 
-If it contains a sequence of instructions, \ 
-re-write those instructions in the following format:</li>
+  <li>Ask the model to check whether conditions are satisfied</li>
 </ol>
 
-<p>Step 1 - …
-Step 2 - …
-…
-Step N - …</p>
-
-<p>If the text does not contain a sequence of instructions, \ 
-then simply write "No steps provided."</p>
-
-<p>"""{text_1}"""
-“””
-response = get_completion(prompt)
-print(“Completion for Text 1:”)
-print(response)</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1012,9 +1003,71 @@ print(response)</p>
 14
 15
 16
-</pre></td><td class="rouge-code"><pre>4. "Few-shot" prompting
-```python
-prompt = f"""
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="rouge-code"><pre><span class="n">text_1</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
+Making a cup of tea is easy! First, you need to get some \ 
+water boiling. While that's happening, \ 
+grab a cup and put a tea bag in it. Once the water is \ 
+hot enough, just pour it over the tea bag. \ 
+Let it sit for a bit so the tea can steep. After a \ 
+few minutes, take out the tea bag. If you \ 
+like, you can add some sugar or milk to taste. \ 
+And that's it! You've got yourself a delicious \ 
+cup of tea to enjoy.
+"""</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
+You will be provided with text delimited by triple quotes. 
+If it contains a sequence of instructions, \ 
+re-write those instructions in the following format:
+
+Step 1 - ...
+Step 2 - …
+…
+Step N - …
+
+If the text does not contain a sequence of instructions, \ 
+then simply write </span><span class="se">\"</span><span class="s">No steps provided.</span><span class="se">\"</span><span class="s">
+
+</span><span class="se">\"\"\"</span><span class="si">{</span><span class="n">text_1</span><span class="si">}</span><span class="se">\"\"\"</span><span class="s">
+"""</span>
+<span class="n">response</span> <span class="o">=</span> <span class="nf">get_completion</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"Completion for Text 1:"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<ol>
+  <li>“Few-shot” prompting</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
 Your task is to answer in a consistent style.
 
 &lt;child&gt;: Teach me about patience.
@@ -1025,16 +1078,71 @@ grandest symphony originates from a single note; \
 the most intricate tapestry begins with a solitary thread.
 
 &lt;child&gt;: Teach me about resilience.
-"""
-response = get_completion(prompt)
-print(response)
+"""</span>
+<span class="n">response</span> <span class="o">=</span> <span class="nf">get_completion</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <h4 id="prompting-principles-2-give-the-model-time-to-think"><span class="mr-2">Prompting principles 2: Give the model time to <em>think</em>.</span><a href="#prompting-principles-2-give-the-model-time-to-think" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <h4 id="tactics-1"><span class="mr-2">Tactics:</span><a href="#tactics-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <ol>
-  <li>Specify the steps required to complete a task.
-```python
-text = f”””
+  <li>Specify the steps required to complete a task.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+</pre></td><td class="rouge-code"><pre><span class="n">text</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
 In a charming village, siblings Jack and Jill set out on \ 
 a quest to fetch water from a hilltop \ 
 well. As they climbed, singing joyfully, misfortune \ 
@@ -1044,51 +1152,54 @@ Though slightly battered, the pair returned home to \
 comforting embraces. Despite the mishap, \ 
 their adventurous spirits remained undimmed, and they \ 
 continued exploring with delight.
-“””
-    <h1 id="example-1">example 1</h1>
-    <p>prompt_1 = f”””
+"""</span>
+<span class="c1"># example 1
+</span><span class="n">prompt_1</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
 Perform the following actions: 
-1 - Summarize the following text delimited by triple <br />
-backticks with 1 sentence.
+1 - Summarize the following text delimited by triple </span><span class="se">\
+</span><span class="s">backticks with 1 sentence.
 2 - Translate the summary into French.
 3 - List each name in the French summary.
-4 - Output a json object that contains the following <br />
-keys: french_summary, num_names.</p>
-  </li>
-</ol>
+4 - Output a json object that contains the following </span><span class="se">\
+</span><span class="s">keys: french_summary, num_names.
 
-<p>Separate your answers with line breaks.</p>
+Separate your answers with line breaks.
 
-<p>Text:
-<code class="language-plaintext highlighter-rouge">{text}</code> “””
-response = get_completion(prompt_1)
-print(“Completion for prompt 1:”)
-print(response)</p>
+Text:
+```</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s">``` """</span>
+<span class="n">response</span> <span class="o">=</span> <span class="nf">get_completion</span><span class="p">(</span><span class="n">prompt_1</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"Completion for prompt 1:"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 
-<p>prompt_2 = f”””
+<span class="n">prompt_2</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
 Your task is to perform the following actions: 
 1 - Summarize the following text delimited by 
   &lt;&gt; with 1 sentence.
 2 - Translate the summary into French.
 3 - List each name in the French summary.
 4 - Output a json object that contains the 
-  following keys: french_summary, num_names.</p>
+  following keys: french_summary, num_names.
 
-<p>Use the following format:
-Text: <text to="" summarize="">
+Use the following format:
+Text: &lt;text to summarize&gt;
 Summary: &lt;summary&gt;
 Translation: &lt;summary translation&gt;
-Names: <list of="" names="" in="" Italian="" summary="">
-Output JSON: <json with="" summary="" and="" num_names=""></json></list></text></p>
+Names: &lt;list of names in Italian summary&gt;
+Output JSON: &lt;json with summary and num_names&gt;
 
-<p>Text: &lt;{text}&gt;
-“””
-response = get_completion(prompt_2)
-print(“\nCompletion for prompt 2:”)
-print(response)</p>
+Text: &lt;</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s">&gt;
+"""</span>
+<span class="n">response</span> <span class="o">=</span> <span class="nf">get_completion</span><span class="p">(</span><span class="n">prompt_2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Completion for prompt 2:"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span>
+</pre></td></tr></tbody></table></code></div></div>
+<ol>
+  <li>Instruct the model to work out its own solution before rushing to a conclusion.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1157,21 +1268,17 @@ print(response)</p>
 66
 67
 68
-69
-70
-</pre></td><td class="rouge-code"><pre>2. Instruct the model to work out its own solution before rushing to a conclusion.
-```python
-prompt = f"""
+</pre></td><td class="rouge-code"><pre><span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
 Determine if the student's solution is correct or not.
 
 Question:
-I'm building a solar power installation and I need \
- help working out the financials. 
+I'm building a solar power installation and I need </span><span class="se">\
+</span><span class="s"> help working out the financials. 
 - Land costs $100 / square foot
 - I can buy solar panels for $250 / square foot
 - I negotiated a contract for maintenance that will cost \ 
-me a flat $100k per year, and an additional $10 / square \
-foot
+me a flat $100k per year, and an additional $10 / square </span><span class="se">\
+</span><span class="s">foot
 What is the total cost for the first year of operations 
 as a function of the number of square feet.
 
@@ -1182,13 +1289,13 @@ Costs:
 2. Solar panel cost: 250x
 3. Maintenance cost: 100,000 + 100x
 Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000
-"""
-response = get_completion(prompt)
-print(response)
+"""</span>
+<span class="n">response</span> <span class="o">=</span> <span class="nf">get_completion</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 
-prompt = f"""
-Your task is to determine if the student's solution \
-is correct or not.
+<span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"""
+Your task is to determine if the student's solution </span><span class="se">\
+</span><span class="s">is correct or not.
 To solve the problem do the following:
 - First, work out your own solution to the problem. 
 - Then compare your solution to the student's solution \ 
@@ -1203,22 +1310,22 @@ Student's solution: ```
 student's solution here ```
 Actual solution: ```
 steps to work out the solution and your solution here ```
-Is the student's solution the same as actual solution \
-just calculated: ```
+Is the student's solution the same as actual solution </span><span class="se">\
+</span><span class="s">just calculated: ```
 yes or no ```
 Student grade: ```
 correct or incorrect ```
 
 Question: ```
-I'm building a solar power installation and I need help \
-working out the financials. 
+I'm building a solar power installation and I need help </span><span class="se">\
+</span><span class="s">working out the financials. 
 - Land costs $100 / square foot
 - I can buy solar panels for $250 / square foot
-- I negotiated a contract for maintenance that will cost \
-me a flat $100k per year, and an additional $10 / square \
-foot
-What is the total cost for the first year of operations \
-as a function of the number of square feet. ``` 
+- I negotiated a contract for maintenance that will cost </span><span class="se">\
+</span><span class="s">me a flat $100k per year, and an additional $10 / square </span><span class="se">\
+</span><span class="s">foot
+What is the total cost for the first year of operations </span><span class="se">\
+</span><span class="s">as a function of the number of square feet. ``` 
 Student's solution: ```
 Let x be the size of the installation in square feet.
 Costs:
@@ -1226,10 +1333,11 @@ Costs:
 2. Solar panel cost: 250x
 3. Maintenance cost: 100,000 + 100x
 Total cost: 100x + 250x + 100,000 + 100x = 450x + 100,000 ```
-Actual solution: """
-response = get_completion(prompt)
-print(response)
+Actual solution: """</span>
+<span class="n">response</span> <span class="o">=</span> <span class="nf">get_completion</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <blockquote class="prompt-warning">
   <p>Model Limitations: Hallucinations
 	fake things that only exist in the mind.</p>
@@ -1358,7 +1466,9 @@ Review: ```</span><span class="si">{</span><span class="n">prod_review</span><sp
 
 
 </pre></td></tr></tbody></table></code></div></div>
+
 <h4 id="summarize-multiple-product-reviews"><span class="mr-2">Summarize multiple product reviews</span><a href="#summarize-multiple-product-reviews" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1541,6 +1651,7 @@ that you plan to use that way you can avoid adding so </span><span class="se">\
 
 <h3 id="4-inferring"><span class="mr-2">4 Inferring</span><a href="#4-inferring" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <h4 id="product-review-text"><span class="mr-2">Product Review Text</span><a href="#product-review-text" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1719,6 +1830,7 @@ Review text: '''</span><span class="si">{</span><span class="n">lamp_review</spa
 
 <h3 id="5-transforming"><span class="mr-2">5 Transforming</span><a href="#5-transforming" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <h4 id="51-translation"><span class="mr-2">5.1 Translation</span><a href="#51-translation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1782,6 +1894,7 @@ Translate the following text to Spanish in both the </span><span class="se">\
 </pre></td></tr></tbody></table></code></div></div>
 
 <h4 id="52-tone-transformation"><span class="mr-2">5.2 Tone Transformation</span><a href="#52-tone-transformation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1825,6 +1938,7 @@ Translate the following python dictionary from JSON to an HTML </span><span clas
 </pre></td></tr></tbody></table></code></div></div>
 
 <h4 id="53-spellgrammar-check"><span class="mr-2">5.3 Spell/Grammar check</span><a href="#53-spellgrammar-check" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1919,6 +2033,7 @@ Text: ```</span><span class="si">{</span><span class="n">text</span><span class=
 
 <h3 id="6-expanding"><span class="mr-2">6 Expanding</span><a href="#6-expanding" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <h4 id="61-customer-service"><span class="mr-2">6.1 Customer Service</span><a href="#61-customer-service" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -2032,6 +2147,7 @@ Customer review: ```</span><span class="si">{</span><span class="n">review</span
 </pre></td></tr></tbody></table></code></div></div>
 
 <h4 id="62-use-details-from-the-customers-email"><span class="mr-2">6.2 Use details from the customer’s email</span><a href="#62-use-details-from-the-customers-email" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -2067,6 +2183,7 @@ Customer review: ```</span><span class="si">{</span><span class="n">review</span
 </pre></td></tr></tbody></table></code></div></div>
 
 <h3 id="7-chatbot"><span class="mr-2">7 Chatbot</span><a href="#7-chatbot" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -2378,19 +2495,19 @@ You are OrderBot, an automated service to collect orders for a pizza restaurant.
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Paper%20Summary%20-%20c0ldstudy&url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FChatGPT_Prompt%2F" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=ChatGPT%20Prompt%20Course%20Note%20-%20c0ldstudy&url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FChatGPT_Prompt%2F" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Paper%20Summary%20-%20c0ldstudy&u=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FChatGPT_Prompt%2F" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=ChatGPT%20Prompt%20Course%20Note%20-%20c0ldstudy&u=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FChatGPT_Prompt%2F" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://t.me/share/url?url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FChatGPT_Prompt%2F&text=Paper%20Summary%20-%20c0ldstudy" data-toggle="tooltip" data-placement="top"
+        <a href="https://t.me/share/url?url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FChatGPT_Prompt%2F&text=ChatGPT%20Prompt%20Course%20Note%20-%20c0ldstudy" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -2445,6 +2562,11 @@ You are OrderBot, an automated service to collect orders for a pizza restaurant.
         
         
         
+      <li><a href="/posts/ChatGPT_Prompt/">ChatGPT Prompt Course Note</a></li>
+      
+        
+        
+        
       <li><a href="/posts/Paper_Summary_2023/">Paper Summary 2023</a></li>
       
         
@@ -2461,11 +2583,6 @@ You are OrderBot, an automated service to collect orders for a pizza restaurant.
         
         
       <li><a href="/posts/C&W_Attack/">C&W Attack</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/S&P_2022/">S&P2022</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
