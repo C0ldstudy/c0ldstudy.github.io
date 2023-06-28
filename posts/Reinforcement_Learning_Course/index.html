@@ -39,25 +39,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Adversarial attack on Graph Neural Network for Node Classification" />
+<meta property="og:title" content="Reinforcement Learning Course from Hugging Face" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Paper Summary of adversarial Graph Convolutional Networks" />
-<meta property="og:description" content="Paper Summary of adversarial Graph Convolutional Networks" />
-<link rel="canonical" href="http://c0ldstudy.github.io/posts/Adversarial_Attacks_on_Graphs/" />
-<meta property="og:url" content="http://c0ldstudy.github.io/posts/Adversarial_Attacks_on_Graphs/" />
+<meta name="description" content="I use the blog to record my learning procedures of reinforcement learning course from Hugging Face" />
+<meta property="og:description" content="I use the blog to record my learning procedures of reinforcement learning course from Hugging Face" />
+<link rel="canonical" href="http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/" />
+<meta property="og:url" content="http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/" />
 <meta property="og:site_name" content="c0ldstudy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-02-13T00:00:00-08:00" />
+<meta property="article:published_time" content="2023-03-11T00:00:00-08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Adversarial attack on Graph Neural Network for Node Classification" />
+<meta property="twitter:title" content="Reinforcement Learning Course from Hugging Face" />
 <meta name="twitter:site" content="@JiacenXu" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-02-13T00:00:00-08:00","datePublished":"2022-02-13T00:00:00-08:00","description":"Paper Summary of adversarial Graph Convolutional Networks","headline":"Adversarial attack on Graph Neural Network for Node Classification","mainEntityOfPage":{"@type":"WebPage","@id":"http://c0ldstudy.github.io/posts/Adversarial_Attacks_on_Graphs/"},"url":"http://c0ldstudy.github.io/posts/Adversarial_Attacks_on_Graphs/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-10T09:51:07-07:00","datePublished":"2023-03-11T00:00:00-08:00","description":"I use the blog to record my learning procedures of reinforcement learning course from Hugging Face","headline":"Reinforcement Learning Course from Hugging Face","mainEntityOfPage":{"@type":"WebPage","@id":"http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/"},"url":"http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Adversarial attack on Graph Neural Network for Node Classification | c0ldstudy
+  <title>Reinforcement Learning Course from Hugging Face | c0ldstudy
   </title>
 
   <!--
@@ -466,7 +466,7 @@
         
 
           
-            <span>Adversarial attack on Graph Neural Network for Node Classification</span>
+            <span>Reinforcement Learning Course from Hugging Face</span>
           
 
         
@@ -625,8 +625,73 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
 
   
 
@@ -701,13 +766,32 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
 
     
 
-  
-
-  
-  
+    
 
   
 
@@ -721,7 +805,7 @@
 
 <!-- return -->
 
-<h1 data-toc-skip>Adversarial attack on Graph Neural Network for Node Classification</h1>
+<h1 data-toc-skip>Reinforcement Learning Course from Hugging Face</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -737,15 +821,35 @@
 
 
 <em class=""
-    data-ts="1644739200"
+    data-ts="1678521600"
     data-df="ll"
     data-toggle="tooltip" data-placement="bottom">
-  Feb 13, 2022
+  Mar 11, 2023
 </em>
 
     </span>
 
     <!-- lastmod date -->
+    
+    <span>
+      Updated
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class=""
+    data-ts="1686415867"
+    data-df="ll"
+    data-toggle="tooltip" data-placement="bottom">
+  Jun 10, 2023
+</em>
+
+    </span>
     
 
   
@@ -788,8 +892,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="743 words">
-  <em>4 min</em> read</span>
+  title="1467 words">
+  <em>8 min</em> read</span>
 
     </div>
 
@@ -798,155 +902,322 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <p>In the blog, I will discuss several papers about attack methods on <strong>Graph Convolutional Networks</strong> for <strong>Node Classification</strong> while there are also many other tasks which are deserved digging into like Community Detection, Link Prediction, etc.</p>
+  <p>I use the blog to record my learning procedures of reinforcement learning course from <a href="[https://huggingface.co/deep-rl-course/communication/certification](https://huggingface.co/deep-rl-course/communication/certification)">Hugging Face</a></p>
 
-<p>In the blog, I exploit the adversarial graph neural networks and related knowledge. I will summarize these attacks and defenses. There is also a useful <a href="https://github.com/YingtongDou/graph-adversarial-learning-literature">github repo</a> which collects related papers and code links.</p>
+<h2 id="unit-1-introduction-to-deep-reinforcement-learning"><span class="mr-2">Unit 1: Introduction to Deep Reinforcement Learning</span><a href="#unit-1-introduction-to-deep-reinforcement-learning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="1-concepts"><span class="mr-2">1. Concepts</span><a href="#1-concepts" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>The definition of Graph Adversarial Attack</p>
-
-<h2 id="2-attack"><span class="mr-2">2. Attack</span><a href="#2-attack" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>The graph adversarial attack can be classified based on different prospectives.</p>
-
-<p><strong>Attacker’s Ability</strong>:</p>
-
+<p><strong>Concepts</strong>:</p>
 <ul>
-  <li>Evasion Attack: Attacking happens after the GNN model is trained.</li>
-  <li>Poisoning Attack: Attacking happens during the training by adding poison data into the training set.</li>
+  <li>Reinforcement Learning is a computational approach of learning from action. An agent is designed based on the environment interactions with trail and error and receving rewards(+/-) as feedback.</li>
+  <li>The objective function is to maximize the expected cumulative reward.</li>
+  <li>The RL process is a sequence of state, action, reward, and next state.</li>
+  <li>The rewards can be discounted: the early rewards are more probable and predictable then long term future rewards.</li>
+  <li>The optimal policy is necessary to solve an RL problem which decide the action to take given a state. One example is to maximize the expected return.
+    <ul>
+      <li>Policy-based methods: Training the plicy directly.</li>
+      <li>Value-based methods: Training the policy by a value function.</li>
+    </ul>
+  </li>
 </ul>
 
-<p><strong>Perturbation Type</strong>:</p>
-
+<p><strong>Related Glossary</strong>:</p>
 <ul>
-  <li>Modifying Feature:</li>
-  <li>Adding or Deleting Edges</li>
-  <li>Injecting Nodes</li>
+  <li>Markov Property</li>
+  <li>Observations: Partial description of the state of the environment.</li>
+  <li>State: Complete description of the state of the world.</li>
+  <li>Actions: Discrete/Continuous Actions.</li>
+  <li>Tasks: Episodic/Continuous.</li>
 </ul>
 
-<p><strong>Adversary’s Goal</strong>:</p>
+<p><strong>Solution</strong>:</p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+</pre></td><td class="rouge-code"><pre><span class="kn">from</span> <span class="n">pyvirtualdisplay</span> <span class="kn">import</span> <span class="n">Display</span>
+<span class="n">virtual_display</span> <span class="o">=</span> <span class="nc">Display</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1400</span><span class="p">,</span> <span class="mi">900</span><span class="p">))</span>
+<span class="n">virtual_display</span><span class="p">.</span><span class="nf">start</span><span class="p">()</span>
 
+<span class="kn">import</span> <span class="n">gym</span>
+<span class="kn">from</span> <span class="n">huggingface_sb3</span> <span class="kn">import</span> <span class="n">load_from_hub</span><span class="p">,</span> <span class="n">package_to_hub</span><span class="p">,</span> <span class="n">push_to_hub</span>
+<span class="kn">from</span> <span class="n">huggingface_hub</span> <span class="kn">import</span> <span class="n">notebook_login</span> <span class="c1"># To log to our Hugging Face account to be able to upload models to the Hub.
+</span><span class="kn">from</span> <span class="n">stable_baselines3</span> <span class="kn">import</span> <span class="n">PPO</span>
+<span class="kn">from</span> <span class="n">stable_baselines3.common.evaluation</span> <span class="kn">import</span> <span class="n">evaluate_policy</span>
+<span class="kn">from</span> <span class="n">stable_baselines3.common.env_util</span> <span class="kn">import</span> <span class="n">make_vec_env</span>
+
+<span class="c1"># Create the environment
+</span><span class="n">env</span> <span class="o">=</span> <span class="nf">make_vec_env</span><span class="p">(</span><span class="s">'LunarLander-v2'</span><span class="p">,</span> <span class="n">n_envs</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="c1"># We added some parameters to accelerate the training
+</span><span class="n">model</span> <span class="o">=</span> <span class="nc">PPO</span><span class="p">(</span>
+    <span class="n">policy</span> <span class="o">=</span> <span class="s">'MlpPolicy'</span><span class="p">,</span>
+    <span class="n">env</span> <span class="o">=</span> <span class="n">env</span><span class="p">,</span>
+    <span class="n">n_steps</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">,</span>
+    <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span><span class="p">,</span>
+    <span class="n">n_epochs</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="n">gamma</span> <span class="o">=</span> <span class="mf">0.999</span><span class="p">,</span>
+    <span class="n">gae_lambda</span> <span class="o">=</span> <span class="mf">0.98</span><span class="p">,</span>
+    <span class="n">ent_coef</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span>
+    <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># Train it for 1,000,000 timesteps
+</span><span class="n">model</span><span class="p">.</span><span class="nf">learn</span><span class="p">(</span><span class="n">total_timesteps</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">progress_bar</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">log_interval</span><span class="o">=</span><span class="mi">100000</span><span class="p">)</span>
+<span class="c1"># Save the model
+</span><span class="n">model_name</span> <span class="o">=</span> <span class="s">"LunarLander-v2"</span>
+<span class="n">model</span><span class="p">.</span><span class="nf">save</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+
+<span class="n">eval_env</span> <span class="o">=</span> <span class="n">gym</span><span class="p">.</span><span class="nf">make</span><span class="p">(</span><span class="s">"LunarLander-v2"</span><span class="p">)</span>
+<span class="n">mean_reward</span><span class="p">,</span> <span class="n">std_reward</span> <span class="o">=</span> <span class="nf">evaluate_policy</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">eval_env</span><span class="p">,</span> <span class="n">n_eval_episodes</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">deterministic</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"mean_reward=</span><span class="si">{</span><span class="n">mean_reward</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> +/- </span><span class="si">{</span><span class="n">std_reward</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="n">gym</span>
+<span class="kn">from</span> <span class="n">stable_baselines3.common.vec_env</span> <span class="kn">import</span> <span class="n">DummyVecEnv</span>
+<span class="kn">from</span> <span class="n">stable_baselines3.common.env_util</span> <span class="kn">import</span> <span class="n">make_vec_env</span>
+
+<span class="kn">from</span> <span class="n">huggingface_sb3</span> <span class="kn">import</span> <span class="n">package_to_hub</span>
+
+
+
+<span class="c1">## repo_id is the id of the model repository from the Hugging Face Hub (repo_id = {organization}/{repo_name} for instance ThomasSimonini/ppo-LunarLander-v2
+</span><span class="n">repo_id</span> <span class="o">=</span> <span class="s">""</span> <span class="c1"># Need revise
+</span>
+<span class="c1"># TODO: Define the name of the environment
+</span><span class="n">env_id</span> <span class="o">=</span> <span class="s">"LunarLander-v2"</span>
+
+<span class="c1"># Create the evaluation env
+</span><span class="n">eval_env</span> <span class="o">=</span> <span class="nc">DummyVecEnv</span><span class="p">([</span><span class="k">lambda</span><span class="p">:</span> <span class="n">gym</span><span class="p">.</span><span class="nf">make</span><span class="p">(</span><span class="n">env_id</span><span class="p">)])</span>
+
+
+<span class="c1"># TODO: Define the model architecture we used
+</span><span class="n">model_architecture</span> <span class="o">=</span> <span class="s">"PPO"</span>
+
+<span class="c1">## TODO: Define the commit message
+</span><span class="n">commit_message</span> <span class="o">=</span> <span class="s">"initialization"</span>
+
+<span class="c1"># method save, evaluate, generate a model card and record a replay video of your agent before pushing the repo to the hub
+</span><span class="nf">package_to_hub</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="c1"># Our trained model
+</span>               <span class="n">model_name</span><span class="o">=</span><span class="n">model_name</span><span class="p">,</span> <span class="c1"># The name of our trained model
+</span>               <span class="n">model_architecture</span><span class="o">=</span><span class="n">model_architecture</span><span class="p">,</span> <span class="c1"># The model architecture we used: in our case PPO
+</span>               <span class="n">env_id</span><span class="o">=</span><span class="n">env_id</span><span class="p">,</span> <span class="c1"># Name of the environment
+</span>               <span class="n">eval_env</span><span class="o">=</span><span class="n">eval_env</span><span class="p">,</span> <span class="c1"># Evaluation Environment
+</span>               <span class="n">repo_id</span><span class="o">=</span><span class="n">repo_id</span><span class="p">,</span> <span class="c1"># id of the model repository from the Hugging Face Hub (repo_id = {organization}/{repo_name} for instance ThomasSimonini/ppo-LunarLander-v2
+</span>               <span class="n">commit_message</span><span class="o">=</span><span class="n">commit_message</span><span class="p">)</span>
+
+<span class="c1"># Note: if after running the package_to_hub function and it gives an issue of rebasing, please run the following code
+# cd &lt;path_to_repo&gt; &amp;&amp; git add . &amp;&amp; git commit -m "Add message" &amp;&amp; git pull
+# And don't forget to do a "git push" at the end to push the change to the hub.
+</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="unit-2-introduction-to-q-learning"><span class="mr-2">Unit 2: Introduction to Q-Learning</span><a href="#unit-2-introduction-to-q-learning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>To solve the RL problems, a policy is required. There are two ways to get it:</p>
 <ul>
-  <li>Targeted Attack</li>
-  <li>Un-targeted Attack</li>
+  <li>Policy-based: training the policy directly.</li>
+  <li>Value-based: Find an optimal value function.
+    <ul>
+      <li>Most of the time, an Epsilon-Greedy Policy is used to handle the exploration/exploitation trade-off.
+        <ul>
+          <li>The state-value function.</li>
+          <li>The action-value function.</li>
+        </ul>
+      </li>
+      <li>The return valud is the expected return.
+One way to simplify the value estimation is Bellman Equation. It is similar to Bellman-Ford algorithm to me. The main idea is to calculate the value as the sum of immediate reward plus the discounted value of the state that follows.</li>
+    </ul>
+  </li>
 </ul>
 
-<p><strong>Adversary’s Knowledge</strong>:</p>
-
+<h4 id="two-learning-strategies"><span class="mr-2">Two learning strategies:</span><a href="#two-learning-strategies" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <ul>
-  <li>White-box Attack</li>
-  <li>Black-box Attack</li>
-  <li>Gray-box Attack: the attacker has limited knowledge.</li>
+  <li>Monte Carlo: randomly generate a sequence of state, action, reward… and calculate the the return at the end of the episode and use it as a target for updating.</li>
+  <li>Temporal Difference Learning: update the value function from a step.</li>
 </ul>
 
-<h2 id="1-adversarial-attack-on-graph-structured-data"><span class="mr-2">1. Adversarial Attack on Graph Structured Data</span><a href="#1-adversarial-attack-on-graph-structured-data" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h4 id="q-learning"><span class="mr-2">Q-Learning</span><a href="#q-learning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>An off-policy value-based method that uses a Temporal Difference approach to train its action-value function.
+The epsilon-greedy policy: Instead local optimal action, use epsilon as the possibility to take random action or greedy action.</p>
 
-<p>Author-Time-arXiv: Hanjun Dai etc.; ICML 2018; 1806.02371;</p>
+<h2 id="unit-3-deep-q-learning-with-atari-games--using-rl-baselines3-zoo"><span class="mr-2">Unit 3: Deep Q-Learning with Atari Games 👾 using RL Baselines3 Zoo</span><a href="#unit-3-deep-q-learning-with-atari-games--using-rl-baselines3-zoo" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Use Neural Network to take a state and approximate Q-values.</p>
 
-<p><strong>Key Points</strong>:</p>
+<h4 id="the-deep-q-network-dqn"><span class="mr-2">The Deep Q-Network: DQN</span><a href="#the-deep-q-network-dqn" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Input: several frames of games
+Output: a vector of Q-values for each possible action at that state.</p>
 
+<h4 id="the-deep-q-algorithm"><span class="mr-2">The Deep Q Algorithm</span><a href="#the-deep-q-algorithm" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>It uses a deep neural network to approximate the different Q-values for each possible action at a state (value-function estimation).
+It has two phases:</p>
 <ul>
-  <li>Proposing a reinforcement learning based attack.</li>
+  <li>Sampling: Store the observed experience tuples in a replay memory.</li>
+  <li>Training: Select a small batch of tuples randomly and learn from this batch using a gradient descent update step.
+One main problem of Deep Q-Learning is instability. There are three solutions:</li>
+  <li>Experience Replay to make more efficient use of experiences.
+    <ul>
+      <li>Make more efficient use of the experiences during the training.</li>
+      <li>Avoid forgetting previous experiences and reduce the correlation between experiences.</li>
+    </ul>
+  </li>
+  <li>Fixed Q-Target to stabilize the training.
+    <ul>
+      <li>Use a separate network with fixed parameters for estimating the TD Target.</li>
+      <li>Copy the parameters from our Deep Q-Network every C steps to update the target network.</li>
+    </ul>
+  </li>
+  <li>Double Deep Q-Learning, to handle the problem of the overestimation of Q-values.
+    <ul>
+      <li>Use the DQN Network to select the best action to take for the next state.</li>
+      <li>Use the Target network to calculate the target Q-value of taking that action at the next state.</li>
+    </ul>
+  </li>
 </ul>
 
-<p>RL-S2V</p>
+<h2 id="bonus-unit-2-automatic-hyperparameter-tuning-with-optuna"><span class="mr-2">Bonus Unit 2: Automatic Hyperparameter Tuning with Optuna</span><a href="#bonus-unit-2-automatic-hyperparameter-tuning-with-optuna" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="1-a-restricted-black-box-adversarial-framework-towards-attacking-graph-embedding-models"><span class="mr-2">1. A Restricted Black-box Adversarial Framework Towards Attacking Graph Embedding Models</span><a href="#1-a-restricted-black-box-adversarial-framework-towards-attacking-graph-embedding-models" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><a href="https://github.com/optuna/optuna">Optuna</a> is a library to search for the best hyperparameters automatically.</p>
 
-<p>Author-Time-arXiv: Heng Chang etc.; AAAI 2020; 1908.01297;</p>
-
-<p><strong>Key Points</strong>:</p>
-
+<h2 id="unit-4-policy-gradient-with-pytorch"><span class="mr-2">Unit 4: Policy Gradient with Pytorch</span><a href="#unit-4-policy-gradient-with-pytorch" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>The policy-based method:</p>
 <ul>
-  <li>Proposing GF Attack, a black-box attack which constructs adversarial examples by graph filter and feature matrix.</li>
+  <li>The idea is to parameterize the policy and maximize the performance of the parameterized policy using gradient ascent.</li>
+  <li>The policy-gradient method is a subclass of the policy-based method.</li>
 </ul>
 
-<p>Graph Embedding Models are used to transfer a graph including vertexes, edges and other related information into a lower dimension vector space.</p>
-
-<h2 id="1-adversarial-attacks-on-graph-neural-networks-via-meta-learning"><span class="mr-2">1. Adversarial Attacks on Graph Neural Networks Via Meta Learning</span><a href="#1-adversarial-attacks-on-graph-neural-networks-via-meta-learning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>Author-Time: Daniel Zugner etc.; ICLR2019;</p>
-
-<p><strong>Key Points</strong>:</p>
-
+<h4 id="the-advantages-and-disadvantages-of-policy-gradient-methods"><span class="mr-2">The advantages and disadvantages of policy-gradient methods</span><a href="#the-advantages-and-disadvantages-of-policy-gradient-methods" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Adv:</p>
 <ul>
-  <li>Meta Learning</li>
-  <li>Poisoning Attack</li>
+  <li>The simplicity of integration.</li>
+  <li>Policy-gradient methods can learn a stochastic policy.</li>
+  <li>Policy-gradient methods are more effective in high-dimensional action spaces and continuous actions spaces.</li>
+  <li>Policy-gradient methods ahve better convergence properties.
+Dis:</li>
+  <li>It converges to a local maximum instead of a global optimum.</li>
+  <li>It goes slow: inefficient.</li>
+  <li>It has high variance.</li>
 </ul>
 
-<h3 id="11-problem-formulation"><span class="mr-2">1.1 Problem Formulation</span><a href="#11-problem-formulation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h2 id="unit-5-introduction-to-unity-ml-agents"><span class="mr-2">Unit 5: Introduction to Unity ML-Agents</span><a href="#unit-5-introduction-to-unity-ml-agents" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><a href="https://github.com/Unity-Technologies/ml-agents">Unity ML-Agent</a> is a toolkit for the game engine Unity to create environments to train the agents.</p>
 
-<p>The paper considers semi-supervised node classification. Given a set of labeled nodes \(\nu_L\subseteq\nu\), where they have exactly on class in \(C=\{c_1,c_2,\dots,c_K\}\). The goal is to learn a function \(f_\theta\) mapping each node \(v\in \nu\) to one of the \(K\) classes in \(C\) or in a probabilistic formulation: to the \(K\)-simplex. The parameters \(\theta\) of the function \(f_\theta\) are generally learned by minimizing a loss function \(L_{trian}\), e.g. cross-entropy, on the labeled training nodes with a single attributed graph \(G\):</p>
-
-<p>\(\theta^*=\mathop{\arg\min}_\limits{\theta}L_{train}(f_{\theta}(G))\).</p>
-
-<h3 id="12-attack-model"><span class="mr-2">1.2 Attack Model</span><a href="#12-attack-model" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p><strong>Goal</strong>: The adversary’s goal is to increase the misclassification rate of a node classification algorithm after training on the data modified by his attacking algorithm.</p>
-
-<p><strong>Knowledge</strong>: The adversary has no knowledge about the classification model and its trained weights. At the same time, he can observe all nodes’ attributes, the graph structure and labels of the subset \(\nu_L\) and uses a surrogate model to modify these data.</p>
-
-<p><strong>Capability</strong>: The adversary has several rules when attacking the graph models.</p>
-
+<h2 id="unit-6-actor-critic-methods-with-robotics-environments"><span class="mr-2">Unit 6: Actor Critic Methods with Robotics Environments</span><a href="#unit-6-actor-critic-methods-with-robotics-environments" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Policy-gradient methods estimate the weights of the optimal policy using Gradient Ascent which means it chooses the steepest increase in return.</p>
+<h4 id="actor-critic-methods"><span class="mr-2">Actor-Critic methods</span><a href="#actor-critic-methods" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>A hybrid architecture combing Value-based and Policy-based methods to stabilize the training by reducing the variance.</p>
 <ul>
-  <li>The budget constraint $\Delta$ on the attacks: \(\vert\vert A-\hat A\vert\vert_0\le\Delta\).</li>
-  <li>No node becomes disconnected.</li>
-  <li>The graph’s degree distribution can only marginally be modified by the attacker. All constraints and admissible perturbations on the data are denoted as \(\Phi(G)\).</li>
+  <li>An actor to control how the agent behaves.</li>
+  <li>A critic to measure how good the action is.
+So there are two function approximations:</li>
+  <li>A policy that control how our agent acts: $\pi_\theta(s)$.</li>
+  <li>A value function to assist the policy update by measuring how good the action taken is: $q_w(s,a)$</li>
 </ul>
 
-<h3 id="13-overall-goal"><span class="mr-2">1.3 Overall Goal</span><a href="#13-overall-goal" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h2 id="unit-7-introduction-to-multi-agents-and-ai-vs-ai"><span class="mr-2">Unit 7: Introduction to Multi-Agents And AI vs AI</span><a href="#unit-7-introduction-to-multi-agents-and-ai-vs-ai" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Decentralized approach:</p>
+<ul>
+  <li>Treat all agents independently without considering the existence of the other agents.</li>
+  <li>All agents consider others agents as part of the environment.</li>
+  <li>No guarantee of convergence.
+Centralized approach:</li>
+  <li>A single policy is learned from all the agents.</li>
+  <li>Takes as input the present state of an environment and the policy outputs joint actions.</li>
+  <li>The reward is global.</li>
+</ul>
 
-<p>Poisoning attacks can be formulated as a bilevel optimization problem:
-\(\mathop{\min}_\limits{\hat G\in\Phi(G)}L_{atk}(f_{\theta^*}(\hat G))~s.t.\theta^*=\mathop{\arg\min}_\limits{\theta}L_{train}(f_\theta(\hat G))\)</p>
+<h2 id="unit-8-proximal-policy-optimization-with-doom"><span class="mr-2">Unit 8: Proximal Policy Optimization /with Doom</span><a href="#unit-8-proximal-policy-optimization-with-doom" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>\(L_{atk}\) is the loss function the attacker aims to optimize which aims to decrease the generalization  performance of the model on the unlabeled nodes. \(L_{train}\) is the loss on the training labeled nodes.</p>
+<p>Proximal Policy Optimization (PPO): An architecture that improves the agent’s training stability by avoiding large policy updates.
+Two reasons that we avoid large policy update:</p>
+<ul>
+  <li>Small update is more likely to converge to an optimal solution.</li>
+  <li>Big step can result in <em>off the cliff</em> and take a long time to recover.</li>
+</ul>
 
-<p>The first option is to choose \(L_{atk}=-L_{train}\).</p>
+<h4 id="clipped-surrogate-objective-function"><span class="mr-2">Clipped Surrogate Objective Function</span><a href="#clipped-surrogate-objective-function" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>\(L^{CLIP}(\theta)=E_t[min(r_t(\theta)A_t, clip(r_t(\theta), 1-\epsilon, 1+\epsilon)A)_t)]\)
+where $r_t(\theta)$ denotes the probability ratio between old and current policy.</p>
 
-<p>The second option is to choose \(L_{atk}=-L_{self}~where~L_{self}=L(\nu_U,\hat C_U)\).</p>
+<h2 id="bonus-unit-3-advanced-topics-in-reinforcement-learning"><span class="mr-2">Bonus Unit 3: Advanced Topics In Reinforcement Learning</span><a href="#bonus-unit-3-advanced-topics-in-reinforcement-learning" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>The attacker computes the loss \(L_{self}\) on the unlabeled nodes by predicted labels \(\hat C_U\) of the unlabeled nodes \(\nu_U=\nu \backslash \nu_L\) from a model training on the labeled data.</p>
+<ol>
+  <li>
+    <p><strong>Model-based Reinforcement Learning</strong>: <strong>learning a model of said environment</strong>, and then leveraging the model for control (making decisions).</p>
+  </li>
+  <li>
+    <p><strong>Offline vs Online Reinforcement Learning</strong></p>
+  </li>
+  <li><strong>Reinforcement Learning from Human Feedback</strong> (RLHF): It a methodology for integrating human data labels into a RL-based optimization process. It is motivated by the <strong>challenge of modeling human preferences</strong>.
+     - Useful link: https://huggingface.co/blog/rlhf</li>
+  <li><strong>Decision Transformers</strong>: instead of training a policy using RL methods, such as fitting a value function, that will tell us what action to take to maximize the return (cumulative reward), <strong>we use a sequence modeling algorithm (Transformer) that, given a desired return, past states, and actions, will generate future actions to achieve this desired return</strong>.</li>
+  <li><strong>Language models in RL</strong>:</li>
+  <li>Curriculum Learning for RL</li>
+</ol>
 
-<h3 id="14-poisoning-via-meta-gradients"><span class="mr-2">1.4 Poisoning via Meta-Gradients</span><a href="#14-poisoning-via-meta-gradients" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>The essence of the attack is to treat the graph structure matrix as a hyper-parameter and compute the gradient of the attacker’s loss after training.</p>
-
-\[\nabla_G^{meta}:=\nabla_GL_{atk}(f_{\theta^*}(G))~s.t.~\theta^*=opt_\theta(L_{train}(f_\theta(G)))\]
-
-<p>where \(opt(\cdot)\) is a differentiable optimization procedure like gradient descent and its stochastic variants.</p>
-
-<p>The parameters are updated as follows:</p>
-
-<p>\(\theta_{t+1}=\theta_t-\alpha\nabla_{\theta_t}L_{train}(f_{\theta_t}(G))\).</p>
-
-<p>The paper uses a two-layer graph convolutional network as the surrogate model.</p>
-
-\[f_\theta(A,X)=softmax(\hat A^2XW)\]
-
-<p>where \(\hat A=D^{-\frac{1}{2}}\tilde AD^{-\frac{1}{2}},~\tilde A=A+I\) and \(\theta=\{W\}\) is the set of learnable parameters.</p>
-
-<p>The score function is defined as follows:</p>
-
-\[S(u,v)=\nabla_{a_{uv}}^{meta}\cdot(-2\cdot a_{uv}+1)\]
-
-<p>where \(a_{uv}\) is the entry at position \((u,v)\) in the adjacency matrix \(A\). If the edge \(e=(i,j)\) is inserted, \(a_{ij}=1\) otherwise it is deleted by setting \(a_{ij}=0\).</p>
-
-<p>They pick the perturbation \(e'=(u',v')\) with the highest score at a time:</p>
-
-\[e'=\mathop{\arg\max}_\limits{e=(u,v):M(A,e)\in\Phi(G)}S(u,v)\]
-
-<h3 id="15-approximation"><span class="mr-2">1.5 Approximation</span><a href="#15-approximation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>The paper also assumes \(\hat \theta_t\) is independent of \(\hat \theta_{t-1}\). They discover that the heuristic meta gradient on average has the strongest increase in the training loss.</p>
-
-<p>The heuristic of the meta gradient which achieves faster convergence sets the initial weights \(\theta_0\) like that: \(\nabla_{\theta_0}^{meta}\approx \sum_{t=1}^T\nabla_{\hat \theta_t} L_{train}(f_{\hat\theta_t}(A;X))\).</p>
-
-<p>After approximating based on a , the meta gradient can compute as follows.</p>
-
-<p>\(\nabla_A^{meta}\approx \sum_{t=1}^T\nabla_AL_{train}(f_{\hat\theta_t}(A;X))\).</p>
-
-<p>Besides, when considering the</p>
 
 </div>
 
@@ -954,14 +1225,21 @@
 
   <!-- categories -->
   
+  <div class="post-meta mb-3">
+    <i class="far fa-folder-open fa-fw mr-1"></i>
+    
+      <a href='/categories/blogging/'>Blogging</a>,
+      <a href='/categories/rl/'>RL</a>
+  </div>
+  
 
   <!-- tags -->
   
   <div class="post-tags">
     <i class="fa fa-tags fa-fw mr-1"></i>
       
-      <a href="/tags/paper/"
-          class="post-tag no-text-decoration" >Paper</a>
+      <a href="/tags/note/"
+          class="post-tag no-text-decoration" >Note</a>
       
   </div>
   
@@ -996,19 +1274,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Adversarial%20attack%20on%20Graph%20Neural%20Network%20for%20Node%20Classification%20-%20c0ldstudy&url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FAdversarial_Attacks_on_Graphs%2F" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Reinforcement%20Learning%20Course%20from%20Hugging%20Face%20-%20c0ldstudy&url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FReinforcement_Learning_Course%2F" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Adversarial%20attack%20on%20Graph%20Neural%20Network%20for%20Node%20Classification%20-%20c0ldstudy&u=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FAdversarial_Attacks_on_Graphs%2F" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Reinforcement%20Learning%20Course%20from%20Hugging%20Face%20-%20c0ldstudy&u=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FReinforcement_Learning_Course%2F" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://t.me/share/url?url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FAdversarial_Attacks_on_Graphs%2F&text=Adversarial%20attack%20on%20Graph%20Neural%20Network%20for%20Node%20Classification%20-%20c0ldstudy" data-toggle="tooltip" data-placement="top"
+        <a href="https://t.me/share/url?url=http%3A%2F%2Fc0ldstudy.github.io%2Fposts%2FReinforcement_Learning_Course%2F&text=Reinforcement%20Learning%20Course%20from%20Hugging%20Face%20-%20c0ldstudy" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -1637,163 +1915,163 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
   
 
   
@@ -2493,36 +2771,6 @@
 
 
 
-  
-    
-    
-      
-      
-        
-        
-        
-      
-    
-  
-    
-    
-      
-      
-        
-        
-        
-      
-    
-  
-    
-    
-      
-      
-        
-        
-        
-          
-
 
 
   <div id="related-posts" class="mb-2 mb-sm-4">
@@ -2533,7 +2781,7 @@
       
       
       <div class="card">
-        <a href="/posts/LLM_Paper_Summary/">
+        <a href="/posts/Paper_Summary_2023/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -2545,13 +2793,13 @@
 
 
 <em class="small"
-    data-ts="1686380400"
+    data-ts="1675238400"
     data-df="ll"
     >
-  Jun 10, 2023
+  Feb  1, 2023
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>LLM Paper Summary</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Paper Summary 2023</h3>
             <div class="text-muted small">
               <p>
                 
@@ -2560,53 +2808,11 @@
 
 
 
-                1. Attention is All You Need
-Paper/TF_code/Torch_code
+                1. GPT-GNN: Generative Pre-Training of Graph Neural Networks
+Paper/Code
 
 Main Idea
-The paper is the first to propose a parallel Transformer in the sequence transduction models.
-
-Key insight
-The problems of the RNN (...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/Transformer_Related_Implementation/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="small"
-    data-ts="1684566000"
-    data-df="ll"
-    >
-  May 20, 2023
-</em>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Transformer Related Implementation</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                1. Transformer[1]
-
-I start it by following the video[1] from Andrej Karpathy and check the code from the repo. In the video, he shows how to build a GPT by oneself step by step which also shows the...
+The paper considers the generative pretrained model (GPT) and combine it with Graph Neural Network (GNN) to introd...
               </p>
             </div>
           </div>
@@ -2653,6 +2859,45 @@ Course link: https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/intr...
         </a>
       </div>
     
+      
+      
+      <div class="card">
+        <a href="/posts/Transformer_Related_Implementation/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="small"
+    data-ts="1684566000"
+    data-df="ll"
+    >
+  May 20, 2023
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Transformer Related Implementation</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                1. Transformer[1]
+
+I start it by following the video[1] from Andrej Karpathy and check the code from the repo. In the video, he shows how to build a GPT by oneself step by step which also shows the...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
     </div> <!-- .card-deck -->
   </div> <!-- #related-posts -->
 
@@ -2665,16 +2910,16 @@ Course link: https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/intr...
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/posts/Tricks_Summary_2022/" class="btn btn-outline-primary"
+  <a href="/posts/Paper_Summary_2023/" class="btn btn-outline-primary"
     prompt="Older">
-    <p>Tricks Summary 2022</p>
+    <p>Paper Summary 2023</p>
   </a>
   
 
   
-  <a href="/posts/Graph_Neural_Network/" class="btn btn-outline-primary"
+  <a href="/posts/PC_attack/" class="btn btn-outline-primary"
     prompt="Newer">
-    <p>Graph Neural Network</p>
+    <p>[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation</p>
   </a>
   
 
@@ -3243,6 +3488,67 @@ Course link: https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/intr...
 
 
     
+      <!--
+  mermaid-js loader
+-->
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.2.2/dist/mermaid.min.js"></script>
+
+<script>
+  (function () {
+
+    function updateMermaid(event) {
+      if (event.source === window && event.data &&
+        event.data.direction === ModeToggle.ID) {
+
+        const mode = event.data.message;
+
+        if (typeof mermaid === "undefined") {
+          return;
+        }
+
+        let expectedTheme = (mode === ModeToggle.DARK_MODE ? "dark" : "default");
+        let config = {theme: expectedTheme};
+
+        /* Re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
+        $(".mermaid").each(function () {
+          let svgCode = $(this).prev().children().html();
+          $(this).removeAttr("data-processed");
+          $(this).html(svgCode);
+        });
+
+        mermaid.initialize(config);
+        mermaid.init(undefined, ".mermaid");
+      }
+    }
+
+    let initTheme = "default";
+
+    if ($("html[data-mode=dark]").length > 0
+      || ($("html[data-mode]").length == 0
+        && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      initTheme = "dark";
+    }
+
+    let mermaidConf = {
+      theme: initTheme  /* <default|dark|forest|neutral> */
+    };
+
+    /* Create mermaid tag */
+    $("pre").has("code.language-mermaid").each(function () {
+      let svgCode = $(this).children().html();
+      $(this).addClass("unloaded");
+      $(this).after(`<pre class=\"mermaid\">${svgCode}</pre>`);
+    });
+
+    mermaid.initialize(mermaidConf);
+
+    window.addEventListener("message", updateMermaid);
+  })();
+
+</script>
+
+    
 
     <div id="mask"></div>
 
@@ -3419,6 +3725,27 @@ SimpleJekyllSearch({
 
 <script defer src="/assets/js/dist/post.min.js"></script>
 
+
+  <!-- MathJax -->
+  <script>
+    /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */
+    MathJax = {
+      tex: {
+        /* start/end delimiter pairs for in-line math */
+        inlineMath: [
+          ['$', '$'],
+          ['\\(', '\\)']
+        ],
+        /* start/end delimiter pairs for display math */
+        displayMath: [
+          ['$$', '$$'],
+          ['\\[', '\\]']
+        ]
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
 
 
 <!-- commons -->

@@ -4,7 +4,7 @@
   <id>http://c0ldstudy.github.io/</id>
   <title>c0ldstudy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-05-08T21:20:50-07:00</updated>
+  <updated>2023-06-27T19:18:38-07:00</updated>
   <author>
     <name>Jiacen (Jason) Xu</name>
     <uri>http://c0ldstudy.github.io/</uri>
@@ -17,6 +17,100 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>LLM Paper Summary</title>
+    <link href="http://c0ldstudy.github.io/posts/LLM_Paper_Summary/" rel="alternate" type="text/html" title="LLM Paper Summary" />
+    <published>2023-06-10T00:00:00-07:00</published>
+  
+    <updated>2023-06-10T00:00:00-07:00</updated>
+  
+    <id>http://c0ldstudy.github.io/posts/LLM_Paper_Summary/</id>
+    <content src="http://c0ldstudy.github.io/posts/LLM_Paper_Summary/" />
+    <author>
+      <name>Jiacen (Jason) Xu</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="NLP" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1. Attention is All You Need
+Paper/TF_code/Torch_code
+
+Main Idea
+The paper is the first to propose a parallel Transformer in the sequence transduction models.
+
+Key insight
+The problems of the RNN (LSTM, GRU) model: Need to calculate $h_t$ by $h_{t-1}$ which cannot be executed in parallel. While Transformer reduces the sequential computation
+
+Model Structure:
+
+
+
+  Position Encoding: they use sin...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Transformer Related Implementation</title>
+    <link href="http://c0ldstudy.github.io/posts/Transformer_Related_Implementation/" rel="alternate" type="text/html" title="Transformer Related Implementation" />
+    <published>2023-05-20T00:00:00-07:00</published>
+  
+    <updated>2023-05-20T00:00:00-07:00</updated>
+  
+    <id>http://c0ldstudy.github.io/posts/Transformer_Related_Implementation/</id>
+    <content src="http://c0ldstudy.github.io/posts/Transformer_Related_Implementation/" />
+    <author>
+      <name>Jiacen (Jason) Xu</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="NLP" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1. Transformer[1]
+
+I start it by following the video[1] from Andrej Karpathy and check the code from the repo. In the video, he shows how to build a GPT by oneself step by step which also shows the way to build a NLP model in a high level. I summarize these steps and add some useful tips that mentioned in the video.
+
+1.1 Data Preprocessing
+Tokenizer
+
+1.2 Bigram Model
+The code is here.
+High-leve...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -116,23 +210,23 @@ We present a comparative study of PCSS robu...
 
   
   <entry>
-    <title>Paper Summary 2023</title>
-    <link href="http://c0ldstudy.github.io/posts/Paper_Summary_2023/" rel="alternate" type="text/html" title="Paper Summary 2023" />
-    <published>2023-02-01T00:00:00-08:00</published>
+    <title>Reinforcement Learning Course from Hugging Face</title>
+    <link href="http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/" rel="alternate" type="text/html" title="Reinforcement Learning Course from Hugging Face" />
+    <published>2023-03-11T00:00:00-08:00</published>
   
-    <updated>2023-04-24T14:23:01-07:00</updated>
+    <updated>2023-06-10T09:51:07-07:00</updated>
   
-    <id>http://c0ldstudy.github.io/posts/Paper_Summary_2023/</id>
-    <content src="http://c0ldstudy.github.io/posts/Paper_Summary_2023/" />
+    <id>http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/</id>
+    <content src="http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/" />
     <author>
       <name>Jiacen (Jason) Xu</name>
     </author>
 
   
     
-    <category term="Papers" />
+    <category term="Blogging" />
     
-    <category term="Reading" />
+    <category term="RL" />
     
   
 
@@ -144,113 +238,14 @@ We present a comparative study of PCSS robu...
 
 
 
-      1. GPT-GNN: Generative Pre-Training of Graph Neural Networks
-Paper/Code
+      I use the blog to record my learning procedures of reinforcement learning course from Hugging Face
 
-Main Idea
-The paper considers the generative pretrained model (GPT) and combine it with Graph Neural Network (GNN) to introduce a self-supervised attributed graph generation task which is called GPT_GNN. The authors factorize the likelihood of attribute generation and edge generation.
+Unit 1: Introduction to Deep Reinforcement Learning
 
-Key insight
+Concepts:
 
-  Leverage GPT to graphs...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Tricks Summary 2023</title>
-    <link href="http://c0ldstudy.github.io/posts/Tricks_Summary_2023/" rel="alternate" type="text/html" title="Tricks Summary 2023" />
-    <published>2023-01-29T00:00:00-08:00</published>
-  
-    <updated>2023-01-29T00:00:00-08:00</updated>
-  
-    <id>http://c0ldstudy.github.io/posts/Tricks_Summary_2023/</id>
-    <content src="http://c0ldstudy.github.io/posts/Tricks_Summary_2023/" />
-    <author>
-      <name>Jiacen (Jason) Xu</name>
-    </author>
-
-  
-    
-    <category term="PhD" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      1. Pytorch Reproducibility
-There is a official page talking about the logic of the reproducibility of PyTorch.
-Basically, the following snippet support the reproducibility:
-import numpy as np
-import random
-import torch
-
-seed = 0
-random.seed(seed) # python random generator
-np.random.seed(seed) # numpy random generator
-
-torch.manual_seed(seed)
-torch.cuda.manual_seed_all(seed)
-torch.backends.cudnn...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Coding Interview</title>
-    <link href="http://c0ldstudy.github.io/posts/Coding_Interview/" rel="alternate" type="text/html" title="Coding Interview" />
-    <published>2022-12-14T00:00:00-08:00</published>
-  
-    <updated>2023-04-21T14:55:16-07:00</updated>
-  
-    <id>http://c0ldstudy.github.io/posts/Coding_Interview/</id>
-    <content src="http://c0ldstudy.github.io/posts/Coding_Interview/" />
-    <author>
-      <name>Jiacen (Jason) Xu</name>
-    </author>
-
-  
-    
-    <category term="Summary" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Interview Preparation
-
-1. Top 10 mistakes
-
-  Practicing on a computer: Use pen and paper
-  Not rehearsing Behavioral Questions
-  Not doing a mock interview
-  Trying to Memorize Solutions
-  Not soluving problems out loud
-  Rushing
-  Sloppy Coding: imagine you are writing for real-world maintainability
-  Not Testing
-  Fixing Mistakes Carelessly
-  Giving up
-
-
-2. Behavioral Preparation
-Think about ...
+  Reinforcement Learning is a computational approach of learning from action. An agent is designed based on the environment interactions with trail and error and receving rewards(+/-) as feedback.
+  The objective function is to maxim...
     </summary>
   
 
