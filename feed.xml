@@ -4,7 +4,7 @@
   <id>http://c0ldstudy.github.io/</id>
   <title>c0ldstudy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-20T17:04:16-07:00</updated>
+  <updated>2023-10-22T04:34:32-07:00</updated>
   <author>
     <name>Jiacen (Jason) Xu</name>
     <uri>http://c0ldstudy.github.io/</uri>
@@ -17,6 +17,55 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[SP2024] Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics</title>
+    <link href="http://c0ldstudy.github.io/posts/GSA/" rel="alternate" type="text/html" title="[SP2024] Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics" />
+    <published>2023-10-21T00:00:00-07:00</published>
+  
+    <updated>2023-10-21T00:00:00-07:00</updated>
+  
+    <id>http://c0ldstudy.github.io/posts/GSA/</id>
+    <content src="http://c0ldstudy.github.io/posts/GSA/" />
+    <author>
+      <name>Jiacen (Jason) Xu</name>
+    </author>
+
+  
+    
+    <category term="Papers" />
+    
+    <category term="Presentation" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Title: Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics
+
+  Author: Jiacen Xu, Xiaokui Shu and Zhou Li
+
+  Conference: 2024 IEEE Symposium on Security and Privacy (SP)
+
+  Paper: link
+
+  Code: https://github.com/C0ldstudy/Argus
+
+  Bibtex:
+  @INPROCEEDINGS {,
+author = {J. Xu and X. Shu and Z. Li},
+booktitle = {2024 IEEE Symposium on Secu...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -164,7 +213,7 @@ Course link: https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduct
     <link href="http://c0ldstudy.github.io/posts/PC_attack/" rel="alternate" type="text/html" title="[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation" />
     <published>2023-04-17T00:00:00-07:00</published>
   
-    <updated>2023-04-21T11:06:49-07:00</updated>
+    <updated>2023-10-21T13:29:13-07:00</updated>
   
     <id>http://c0ldstudy.github.io/posts/PC_attack/</id>
     <content src="http://c0ldstudy.github.io/posts/PC_attack/" />
@@ -198,54 +247,9 @@ Course link: https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduct
 
   Code: https://github.com/C0ldstudy/PointSecGuard
 
-  Bibtex: Coming soon.
-
-
-Main Idea
-We present a comparative study of PCSS robu...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Reinforcement Learning Course from Hugging Face</title>
-    <link href="http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/" rel="alternate" type="text/html" title="Reinforcement Learning Course from Hugging Face" />
-    <published>2023-03-11T00:00:00-08:00</published>
-  
-    <updated>2023-06-10T09:51:07-07:00</updated>
-  
-    <id>http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/</id>
-    <content src="http://c0ldstudy.github.io/posts/Reinforcement_Learning_Course/" />
-    <author>
-      <name>Jiacen (Jason) Xu</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="RL" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      I use the blog to record my learning procedures of reinforcement learning course from Hugging Face
-
-Unit 1: Introduction to Deep Reinforcement Learning
-
-Concepts:
-
-  Reinforcement Learning is a computational approach of learning from action. An agent is designed based on the environment interactions with trail and error and receving rewards(+/-) as feedback.
-  The objective function is to maxim...
+  Bibtex:
+  @INPROCEEDINGS {10202642,
+author = {J. Xu and Z. Zhou and B. Feng ...
     </summary>
   
 
