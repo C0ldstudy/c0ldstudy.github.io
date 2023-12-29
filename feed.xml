@@ -4,7 +4,7 @@
   <id>http://c0ldstudy.github.io/</id>
   <title>c0ldstudy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-22T04:42:04-07:00</updated>
+  <updated>2023-12-28T21:43:23-08:00</updated>
   <author>
     <name>Jiacen (Jason) Xu</name>
     <uri>http://c0ldstudy.github.io/</uri>
@@ -20,11 +20,56 @@
 
   
   <entry>
+    <title>LLM Deploy</title>
+    <link href="http://c0ldstudy.github.io/posts/LLM_Deploy/" rel="alternate" type="text/html" title="LLM Deploy" />
+    <published>2023-11-10T00:00:00-08:00</published>
+  
+    <updated>2023-11-23T08:04:04-08:00</updated>
+  
+    <id>http://c0ldstudy.github.io/posts/LLM_Deploy/</id>
+    <content src="http://c0ldstudy.github.io/posts/LLM_Deploy/" />
+    <author>
+      <name>Jiacen (Jason) Xu</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      In the blog, I would like to talk about my exploiting of Large Language Deployment in a linux server.
+
+
+  TL; DR: I use LMDeploy to deploy the large language models like llama2 with the TurboMind backend and gradio frontend.
+
+
+1.0 Preparation
+Use the following command to install lmdeploy.
+
+pip install lmdeploy
+
+# install git lfs following the link (https://github.com/git-lfs/git-lfs/blob/main/I...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>[SP2024] Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics</title>
     <link href="http://c0ldstudy.github.io/posts/GSA/" rel="alternate" type="text/html" title="[SP2024] Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics" />
     <published>2023-10-21T00:00:00-07:00</published>
   
-    <updated>2023-10-21T00:00:00-07:00</updated>
+    <updated>2023-11-20T09:51:07-08:00</updated>
   
     <id>http://c0ldstudy.github.io/posts/GSA/</id>
     <content src="http://c0ldstudy.github.io/posts/GSA/" />
@@ -202,54 +247,6 @@ Course link: https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduct
 
 
 2 Prompting ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation</title>
-    <link href="http://c0ldstudy.github.io/posts/PC_attack/" rel="alternate" type="text/html" title="[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation" />
-    <published>2023-04-17T00:00:00-07:00</published>
-  
-    <updated>2023-10-21T13:29:13-07:00</updated>
-  
-    <id>http://c0ldstudy.github.io/posts/PC_attack/</id>
-    <content src="http://c0ldstudy.github.io/posts/PC_attack/" />
-    <author>
-      <name>Jiacen (Jason) Xu</name>
-    </author>
-
-  
-    
-    <category term="Papers" />
-    
-    <category term="Presentation" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Title: On Adversarial Robustness of Point Cloud Semantic Segmentation
-
-  Author: Jiacen Xu, Zhe Zhou, Boyuan Feng, Yufei Ding and Zhou Li
-
-  Conference: The 53rd Annual IEEE/IFIP International Conference on Dependable Systems and Network, June, 2023.
-
-  Paper: link
-
-  Code: https://github.com/C0ldstudy/PointSecGuard
-
-  Bibtex:
-  @INPROCEEDINGS {10202642,
-author = {J. Xu and Z. Zhou and B. Feng ...
     </summary>
   
 

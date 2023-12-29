@@ -52,7 +52,7 @@
 <meta property="twitter:title" content="Tricks Summary 2023" />
 <meta name="twitter:site" content="@JiacenXu" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-26T11:04:30-07:00","datePublished":"2023-01-29T00:00:00-08:00","description":"1. Pytorch Reproducibility There is a official page talking about the logic of the reproducibility of PyTorch. Basically, the following snippet support the reproducibility: ```python import numpy as np import random import torch","headline":"Tricks Summary 2023","mainEntityOfPage":{"@type":"WebPage","@id":"http://c0ldstudy.github.io/posts/Tricks_Summary_2023/"},"url":"http://c0ldstudy.github.io/posts/Tricks_Summary_2023/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-22T21:50:56-08:00","datePublished":"2023-01-29T00:00:00-08:00","description":"1. Pytorch Reproducibility There is a official page talking about the logic of the reproducibility of PyTorch. Basically, the following snippet support the reproducibility: ```python import numpy as np import random import torch","headline":"Tricks Summary 2023","mainEntityOfPage":{"@type":"WebPage","@id":"http://c0ldstudy.github.io/posts/Tricks_Summary_2023/"},"url":"http://c0ldstudy.github.io/posts/Tricks_Summary_2023/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -625,6 +625,30 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -688,10 +712,10 @@
 
 
 <em class=""
-    data-ts="1695751470"
+    data-ts="1700718656"
     data-df="ll"
     data-toggle="tooltip" data-placement="bottom">
-  Sep 26, 2023
+  Nov 22, 2023
 </em>
 
     </span>
@@ -737,8 +761,8 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="483 words">
-  <em>2 min</em> read</span>
+  title="601 words">
+  <em>3 min</em> read</span>
 
     </div>
 
@@ -891,6 +915,31 @@ We can use <code class="language-plaintext highlighter-rouge">which python</code
   <li><code class="language-plaintext highlighter-rouge">AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'</code>.</li>
 </ul>
 
+<h2 id="6-uninstall-all-the-python-packages-in-an-environment"><span class="mr-2">6. Uninstall all the python packages in an environment</span><a href="#6-uninstall-all-the-python-packages-in-an-environment" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>conda activate &lt;<span class="nb">env </span>name&gt;
+pip freeze | xargs pip uninstall <span class="nt">-y</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p>Issue: The problem of the command is that it will uninstall conda either.</p>
+
+<p>After that, I found that conda is uninstalled either. So I copy the <code class="language-plaintext highlighter-rouge">conda</code>, <code class="language-plaintext highlighter-rouge">conda-env</code>, and <code class="language-plaintext highlighter-rouge">conda-content-trust</code> to <code class="language-plaintext highlighter-rouge">~/miniconda3/bin/</code> and revise the conda configure by editing <code class="language-plaintext highlighter-rouge">vi ~/.condarc</code> and update several pathes.</p>
+
+<p>Check conda config: <code class="language-plaintext highlighter-rouge">conda config --show</code>.</p>
+
+<h2 id="7how-to-use-docker-in-ubuntu"><span class="mr-2">7.How to use docker in Ubuntu?</span><a href="#7how-to-use-docker-in-ubuntu" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>list all running containers: <code class="language-plaintext highlighter-rouge">docker ps</code></li>
+  <li>list all containers: <code class="language-plaintext highlighter-rouge">docker ps -a</code></li>
+  <li>stop all the containers: <code class="language-plaintext highlighter-rouge">docker rm $(docker ps -aq)</code></li>
+  <li>remove all the containers: <code class="language-plaintext highlighter-rouge">docker rm $(docker ps -aq)</code></li>
+  <li>remove all the images: <code class="language-plaintext highlighter-rouge">docker rmi $(docker images -q)</code></li>
+</ul>
+
+
 </div>
 
 <div class="post-tail-wrapper text-muted">
@@ -1004,12 +1053,7 @@ We can use <code class="language-plaintext highlighter-rouge">which python</code
         
         
         
-      <li><a href="/posts/PC_attack/">[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/Coding_Interview/">Coding Interview</a></li>
+      <li><a href="/posts/LLM_Deploy/">LLM Deploy</a></li>
       
         
         
@@ -1019,12 +1063,17 @@ We can use <code class="language-plaintext highlighter-rouge">which python</code
         
         
         
-      <li><a href="/posts/Paper_Summary_2023/">Paper Summary 2023</a></li>
+      <li><a href="/posts/GSA/">[SP2024] Understanding and Bridging the Gap Between Unsupervised Network Representation Learning and Security Analytics</a></li>
       
         
         
         
-      <li><a href="/posts/Reinforcement_Learning_Course/">Reinforcement Learning Course from Hugging Face</a></li>
+      <li><a href="/posts/PC_attack/">[DSN2023] On Adversarial Robustness of Point Cloud Semantic Segmentation</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/Coding_Interview/">Coding Interview</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1521,6 +1570,19 @@ We can use <code class="language-plaintext highlighter-rouge">which python</code
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -2487,6 +2549,46 @@ We can use <code class="language-plaintext highlighter-rouge">which python</code
       
       
       <div class="card">
+        <a href="/posts/LLM_Deploy/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="small"
+    data-ts="1699603200"
+    data-df="ll"
+    >
+  Nov 10, 2023
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>LLM Deploy</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                In the blog, I would like to talk about my exploiting of Large Language Deployment in a linux server.
+
+
+  TL; DR: I use LMDeploy to deploy the large language models like llama2 with the TurboMind b...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
         <a href="/posts/GSA/">
           <div class="card-body">
             <!--
@@ -2563,45 +2665,6 @@ The paper is the first to propose a parallel Transformer in the sequence transdu
 
 Key insight
 The problems of the RNN (...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/Transformer_Related_Implementation/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="small"
-    data-ts="1684566000"
-    data-df="ll"
-    >
-  May 20, 2023
-</em>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Transformer Related Implementation</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                1. Transformer[1]
-
-I start it by following the video[1] from Andrej Karpathy and check the code from the repo. In the video, he shows how to build a GPT by oneself step by step which also shows the...
               </p>
             </div>
           </div>
